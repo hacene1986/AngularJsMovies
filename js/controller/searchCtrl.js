@@ -50,28 +50,14 @@
         }
 
         //Get popular actors
-       // https://api.themoviedb.org/3/person/popular?api_key
-        // $scope.getPopularActors = function(){
-        //     var promise = $http.get(URL + PERSON + POPULAR + API_KEY)   
-        //     promise.then(success, error)
-        //     function success(results){
-        //         console.log(results); 
-        //         $scope.popularActors = results.data.results   
-        //     }
-        //     function error(results) {
-        //         console.log("error", results);
-        //     }
-        // }
+     
+            $http.get(URL + PERSON + POPULAR + API_KEY).then((res)=>{
+                $scope.popularActors = res.data.results
+                //console.log(res.data.results)
+            })
+            
 
         //html a remettre
-    //     {# <div class="cards">
-    //     <div ng-repeat="act in popularActors"  class="card" style="width: 18rem;">
-    //       <img src="http://image.tmdb.org/t/p/w500{{act.profile_path}}" class="card-img-top" alt="..."/>
-    //       <div class="card-body">
-    //         <h5 class="card-title">{{c.name}}</h5>
-    //         <span>{{act.known_for_department}}</span>
-    //       </div>
-    //   </div>
-    // </div> #}
+ 
     }
 })()

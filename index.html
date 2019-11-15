@@ -41,7 +41,15 @@
             <div ng-show="!textShow" class="text">
               <h2>Vous êtes fan de cinéma</h2>
               <p>Trouvez Vos acteurs préférés ainsi que leurs meilleurs film en un ClicK</p>
-            
+                    <div class="cards">
+                    <div ng-repeat="act in popularActors"  class="card" style="width: 18rem;">
+                      <img src="http://image.tmdb.org/t/p/w500{{act.profile_path}}" class="card-img-top" alt="..."/>
+                      <div class="card-body">
+                        <h5 class="card-title">{{act.name}}</h5>
+                        <span>{{act.known_for_department}}</span>
+                      </div>
+                  </div>
+                </div> 
             </div>
             <div ng-show="moviesLoaded" class="cards">
               <div ng-repeat="c in cast"  class="card" style="width: 18rem;">
