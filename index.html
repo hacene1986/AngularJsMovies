@@ -21,7 +21,7 @@
             Sorry, your browser doesn't support embedded videos.
         </video>
         <div class="search">
-            <h2>Application Films</h2>
+            <h2>Films & Acteurs</h2>
             <input class="form-control" placeholder="Chercher un acteur" ng-Model="searchActors" ng-change="getActors()"/> 
             <button class="btn btn-primary btnSearch" ng-click="getActors()">Search</button>
         </div>
@@ -37,6 +37,11 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div ng-show="!textShow" class="text">
+              <h2>Vous êtes fan de cinéma</h2>
+              <p>Trouvez Vos acteurs préférés ainsi que leurs meilleurs film en un ClicK</p>
+            
             </div>
             <div ng-show="moviesLoaded" class="cards">
               <div ng-repeat="c in cast"  class="card" style="width: 18rem;">

@@ -59,3 +59,9 @@ h2{
 .btnSearch{
     margin-top: 10px;
 }
+
+.text{
+    text-align: center;
+    line-height: 4rem;
+    padding: 15px;
+}
