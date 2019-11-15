@@ -1,3 +1,10 @@
+body{
+    background-color: #a7c4cf;
+}
+
+h2{
+    font-family: 'Satisfy', cursive;
+}
 .cards{
     display: flex;
     flex-wrap: wrap;

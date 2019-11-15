@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
-    <title>Document</title>
+    <title>Acteur-app</title>
 </head>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
@@ -43,8 +43,8 @@
                   <img src="http://image.tmdb.org/t/p/w500{{c.poster_path}}" class="card-img-top" alt="..."/>
                   <div class="card-body">
                     <h5 class="card-title">{{c.original_title}}</h5>
-                    <p class="card-text">{{actor.known_for_department}}</p>
                    
+                    <span>Date réalisation: {{c.release_date}}</span>
                   </div>
               </div>
             </div>
